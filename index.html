@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Science Jeopardy</title>
+<!--Links to Reset CSS and CSS files.-->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<!--Link to Google fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Offside" rel="stylesheet">
+</head>
+
+<body>
+	<header id="masthead">
+		<div class="container">
+			<h1>Science Jeopardy!</h1>
+		</div>
+	</header>
+
+	<div id="main-container" class="container">
+		<section class="main-section">
+			<h1 class="rules">The Rules</h1>
+			<p class="rules">Answer the 5 questions, you have 30 seconds to answer all 5 questions. Just as with Jeopardy the TV show, your answer must be in the form of a question.</p>
+			<h2>
+				<button type="button" id="start-button">Start</button>
+			</h2>
+<!--Timer that will diplay onto webpage.-->
+			<div id="show-number"></div>
+<!-- First Question -->
+			<p class="question">1. SpaceX was founded by this South African-born inventor.</p>
+			<ul class="answers">
+			<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Who is Elon Musk.</label><br/>
+			<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Who is Trevor Noah.</label><br/>
+			<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Who is Selig percy Amolis?</label><br/>
+			<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">Who is Allan McLeod Cormack?</label><br/>
+			</ul>
+<!--Second Question-->
+			<p class="question">2. In a vacuum, 186,282 miles per second is the speed of...</p>
+			<ul class="answers">
+			<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">What is sound?</label><br/>
+			<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">What is light?</label><br/>
+			<input type="radio" name="q2" value="c" id="q2c"><label for="q2c">What is atoms?</label><br/>
+			<input type="radio" name="q2" value="d" id="q2d"><label for="q2d">What are neutrons?</label><br/>
+			</ul>
+<!--Third Question-->
+			<p class="question">3. This planet in our solar system has an axis that is titled by 98 degrees.</p>
+			<ul class="answers">
+			<input type="radio" name="q3" value="a" id="q3a"><label for="q3a">What is Earth?</label><br/>
+			<input type="radio" name="q3" value="b" id="q3b"><label for="q3b">What is Mars?</label><br/>
+			<input type="radio" name="q3" value="c" id="q3c"><label for="q3c">What is Saturn?</label><br/>
+			<input type="radio" name="q3" value="d" id="q3d"><label for="q3d">What is Uranus?</label><br/>
+			</ul>
+<!--Fourth Question-->
+			<p class="question">4. This is the name for the unit of measurement of power that is roughly equal to 746 watts.</p>
+			<ul class="answers">
+			<input type="radio" name="q4" value="a" id="q4a"><label for="q4a">What is horsepower?</label><br/>
+			<input type="radio" name="q4" value="b" id="q4b"><label for="q4b">What is gigawatt?</label><br/>
+			<input type="radio" name="q4" value="c" id="q4c"><label for="q4c">What is kilowatt?</label><br/>
+			<input type="radio" name="q4" value="d" id="q4d"><label for="q4d">What is megawatt?</label><br/>
+			</ul>
+<!--Fifth Question-->
+			<p class="question">5. An eon in geology is this many  years.</p>
+			<ul class="answers">
+			<input type="radio" name="q5" value="a" id="q5a"><label for="q5a">What are a thousand years?</label><br/>
+			<input type="radio" name="q5" value="b" id="q5b"><label for="q5b">What are a trillion years?</label><br/>
+			<input type="radio" name="q5" value="c" id="q5c"><label for="q5c">What are a million years?</label><br/>
+			<input type="radio" name="q5" value="d" id="q5d"><label for="q5d">What are a billion years?</label><br/>
+			</ul>
+<!-- Hidden Buttons and Elements -->
+<!-- Submit Button -->
+			<button type="button" id="submit">Submit Final Answers</button>
+			
+<!--Results-->
+			<div id="results">
+			These are the asnswers!
+
+			</div>
+			<button type="button" id="restart">Play Again</button>
+		</section>
+	</div>
+
+<!--Footer Section-->	
+	<footer id="footer" class="site-footer">
+		<div class="container">
+			&copy; Copyright 2017 Noel P. Rodriguez
+		</div>
+	</footer>
+
+<!--Links to JavaScript file and jQuery library online.-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+	<script type="text/javascript" src="/js/questions.js"></script>
+</body>
+</html>
